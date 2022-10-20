@@ -142,6 +142,63 @@ iconbig:hover{
         width: 100%;
         transform: rotate(0deg);
     }
+
+    #title h1{
+        font-size: 5rem;
+    }
+
+    #title .btn{
+        font-size: 3rem;
+    }
+    
+    #title .title-download-buttons{
+        margin: 7% auto;
+    }
+
+    #title .title-image{
+        width: 100%;
+    }
+
+    #features iconbig{
+        font-size: 16rem;
+    }
+
+    #features h3{
+        font-size: 3.5rem;
+    }
+
+    #features p{
+        font-size: 1.6rem
+    }
+
+    #testimonials h2{
+        line-height: 1.5;
+    }
+
+    #pricing h2{
+        font-size: 4rem;
+        padding: 5% 0;
+    }
+
+    #pricing h3{
+        font-size: 2.5rem;
+    }
+
+    #pricing p{
+        font-size: 1.6rem
+    }
+
+    #pricing .card-body p{
+        font-size: 2rem;
+    }
+
+    #pricing .card-footer button{
+        font-size: 3rem;
+    }
+
+    #cta button{
+        font-size: 3rem;
+    }
 }
 
 /* CTA */
