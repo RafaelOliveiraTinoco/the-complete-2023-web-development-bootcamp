@@ -59,7 +59,7 @@ function Simon(){
 
             // game over
             this.color_sequence_user = [];
-            this.color_sequence_game = 0;
+            this.color_sequence_game = [];
 
             // game over sound
             new Audio("sounds/wrong.mp3").play();
