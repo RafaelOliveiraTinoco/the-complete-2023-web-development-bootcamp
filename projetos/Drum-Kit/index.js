@@ -64,5 +64,18 @@ document.querySelectorAll(".drum").forEach(function (button){
 
 });
 
+// load audio files
+Object.keys(keysList).forEach(function (key){
+
+    try{
+        var audio = new Audio(keysList[key].music_file);
+        audio.volume = 0;
+        audio.play();
+    }catch{}
+
+});
+
+
+// create events
 document.addEventListener("keydown", function(key){try{keysList[key.key].pressed(); makesound(key.key, keysList);}catch{}});
 document.addEventListener("keyup", function(key){try{keysList[key.key].released(); makesound(key.key, keysList);}catch{}});
