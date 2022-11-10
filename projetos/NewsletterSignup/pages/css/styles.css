@@ -1,0 +1,50 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f5f5f5;
+}
+
+.form-signin {
+  max-width: 330px;
+  padding: 15px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin #floatingInputNameFirst {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin #floatingInputEmail {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.form-signin #floatingInputNameLast {
+    margin-bottom: -1px;
+    border-radius: 0;
+  }
+
+form {
+
+    margin: auto auto;
+
+    padding: 10% 0 0 0;
+
+}
+
+form button {
+    margin: 3% 0 0 0;
+}
