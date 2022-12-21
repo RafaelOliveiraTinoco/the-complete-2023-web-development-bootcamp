@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+	<head>
+
+		<meta charset="utf-8">
+		<title>Todo List</title>
+
+		<!-- CSS -->
+		<link href="css/styles.css" rel="stylesheet">
+
+	</head>
+
+	<body>
+
+		<div class="box" id="heading">
+
+			<h1><%= date %></h1>
+
+		</div>
+
+		<div class="box">
+
+			<%for (let i = 0; i < todoList.length; i++){%>
+		     		
+				<form method="post" action="/delete">
+
+					<div class="item">
+
+						<input type="checkbox" name="taskToDelete" value="<%= todoList[i]._id %>" onchange="this.form.submit()">
+						<p><%= todoList[i].name %></p>
+
+					</div>
+
+				</form>
+
+		     	<%}%>
+
+			<form method="post" action="/">
+
+				<input type="text" name="newTodo" placeholder="New TODO" autocomplete="off">
+				<button type="submit" name="button">+</button>
+
+			</form>
+
+		</div>
+
+	</body>
+
+</html>
